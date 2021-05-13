@@ -21,4 +21,4 @@ runs:
     - run: ${{ github.action_path }}/goodbye.sh
       shell: bash
       env: 
-        GOODBYE_TO: "octocat"
+        GOODBYE_TO: ${{ inputs.who-to-greet }}
